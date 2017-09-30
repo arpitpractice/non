@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jamaliate | Find Dubai SPA!</title>
+        <!--All meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Jamaliate"/>
+        <meta property="og:site_name" content="Jamaliate"/>
+        <meta property="og:url" content="https://www.jamaliate.com" />
+        <meta property="og:description" content="Seach Spa centers all over dubai!"/>
+        <meta property="og:type" content="website"/>
+        <meta property="article:author" content="https://www.facebook.com/jamaliate" />
+        <meta property="og:image" content="http://" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <!--All seo meta tags -->
+        <!--Link favicon used form ipl site-->
+        <link rel="shortcut icon" href="">
+        <!--All icons-->
+        <link rel="stylesheet" href="../vendors/css/materialdesignicons.min.css"/>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--End of the all icons-->
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- All css-->
+        <link rel="stylesheet" href="../vendors/css/bootstrap.min.css" media="all"/>
+        <link rel="stylesheet" href="../vendors/css/animate.css" media="all"/>
+        <link rel="stylesheet" href="../resources/css/init.css" media="all"/>
+        <link rel="stylesheet" href="../resources/css/main.css" media="all"/>
+        <link rel="stylesheet" href="../resources/css/mediaQuery.css" media="all"/>
+        <link rel="stylesheet" href="../resources/css/style.css" media="all"/>
+        <!--All Javascript file-->
+        <script src="../vendors/js/jquery.min.js"></script>
+        <script src="../vendors/js/hammer.min.js"></script>
+        <script src="../vendors/js/bootstrap.min.js"></script>
+        <script src="../vendors/js/wow.min.js"></script>
+        <script src="../resources/js/init.js"></script>
+        <script src="../resources/js/main.js"></script>
+        <script src="../resources/js/script.js"></script>
+    </head>
+    <body>
+        <nav id="header" class="whiteb navbar navbar-inverse navbar-static-top marginBottom-0" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle display-none" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" data-toggle="modal" data-target="#myModal2"><i class="font-size-16 muted mdi mdi-playlist-plus mdi-18px"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="#" class="muted font-size-14"> Login/SignUp</a></li>
+                    <li class="white"><a href="#" class="muted font-size-14">Get Listed for free</a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <!--Midals and side nav-->
+        <div class="modal left fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog sidenav-width" role="document" >
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>
+
+                        </p>
+                    </div>
+
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        <div class="container">
+            <div class="row omb_login">
+                <div class="col-lg-12">
+                    <h3 class="omb_authTitle font-size-16 l4">Login or <a href="signup.html">Sign up</a></h3>
+                    <div class="row omb_socialButtons">
+                        <div class="col-xs-6 col-sm-6 col-lg-2 col-lg-offset-4">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-facebook" id="fbLink" onclick="fbLogin()">
+                                <i class="mdi mdi-facebook visible-xs"></i>
+                                <span class="hidden-xs">Facebook</span>
+                            </a>
+                        </div>
+
+                        <div class="col-xs-6 col-sm-6 col-lg-2">
+                            <a href="#" class="btn btn-lg btn-block omb_btn-google">
+                                <i class="mdi mdi-google visible-xs"></i>
+                                <span class="hidden-xs">Google+</span>
+                            </a>
+                        </div>	
+                    </div>
+                    <br />
+
+                    <div class="row omb_row-sm-offset-3 omb_loginOr">
+                        <div class="col-xs-12 col-sm-12 col-lg-4 col-lg-offset-4">
+                            <hr class="omb_hrOr l4b">
+                            <span class="omb_spanOr l4">or</span>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-lg-4 col-lg-offset-4">	
+                            <form class="omb_loginForm" action="" autocomplete="off">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="mdi mdi-email l4"></i></span>
+                                    <input type="text" class="form-control" name="username" placeholder="email address">
+                                </div>
+                                <span class="help-block"></span>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="mdi mdi-key l4"></i></span>
+                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                </div>
+                                <span id="error" class="help-block display-nomne">Password error</span>
+                                <br />
+                                <div class="col-sm-12">
+                                    <div class="pull-left">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="remember-me" class="l4">Remember Me
+                                        </label>
+                                    </div>
+                                    <div class="pull-right margin-top-10">
+                                        <a href="#!">Forgot Password</a>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <button class="btn btn-md btn-primary btn-block l4b" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="userData">
+                    </div>
+                    <div id="status"></div>
+                </div>
+            </div>
+        </div>
+        <br /><br />
+        <footer class="l6b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footerleft paddingtop-bottom">
+                        <h6 class="heading7"> Logo</h6>
+
+                        <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA</p>
+                        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
+                        <p><i class="fa fa-envelope"></i> E-mail : info@jamaliate.com</p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 paddingtop-bottom ">
+                        <h6 class="heading7">GENERAL LINKS</h6>
+                        <ul class="footer-ul">
+                            <li><a href="/carrer/"> Career</a></li>
+                            <li><a href="/privacy-policy/"> Privacy Policy</a></li>
+                            <li><a href="/terms/"> Terms & Conditions</a></li>
+                            <li><a href="/faq/"> Frequently Ask Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 paddingtop-bottom media-not">
+                        <h6 class="heading7">LATEST POST</h6>
+                        <div class="post">
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer start from here-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="col-md-12">
+                    <p class="font-family">© 2017 - All Rights with Jamaliate</p>
+                </div>
+
+            </div>
+        </div>
+        <script>
+
+            new WOW().init();
+        </script>
+    </body>
+</html>

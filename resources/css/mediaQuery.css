@@ -1,0 +1,26 @@
+@media all and (max-width : 767px){
+    .media-not {
+        display: none;
+    }
+    .margin-left-1{
+        margin-left:0 !important;
+        margin-top:2%;
+    }
+    .sidenav-width{
+        width:60% !important ;
+    }
+    
+}
+
+@media all and (max-width : 1240px){
+    #input_main_hidden{
+        display: none;
+    }
+}
+
+
+@media all and (min-width : 1240px){
+    #mobile_main_hidden{
+        display: none;
+    }
+}

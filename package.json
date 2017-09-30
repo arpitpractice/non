@@ -1,0 +1,16 @@
+{
+  "name": "inkarn.com",
+  "version": "0.0.1",
+  "description": "A full search engine of various spa's around dubai with price and all.",
+  "main": "index.js",
+  "scripts": {
+    "test": "null"
+  },
+  "author": "Arpit Anand",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "materialize-css": "^0.100.2"
+  }
+}

@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Jamaliate | Find Dubai SPA!</title>
+        <!--All meta tags-->
+        <meta charset="UTF-8">
+
+        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Jamaliate"/>
+        <meta property="og:site_name" content="Jamaliate"/>
+        <meta property="og:url" content="https://www.jamaliate.com" />
+        <meta property="og:description" content="Seach Spa centers all over dubai!"/>
+        <meta property="og:type" content="website"/>
+        <meta property="article:author" content="https://www.facebook.com/jamaliate" />
+        <meta property="og:image" content="http://" />
+        <meta property="og:image:width" content="300" />
+        <meta property="og:image:height" content="300" />
+        <meta name="mobile-web-app-capable" content="yes"/>
+        <!--All seo meta tags -->
+        <!--Link favicon used form ipl site-->
+        <link rel="shortcut icon" href="">
+        <!--All icons-->
+        <link rel="stylesheet" href="vendors/css/materialdesignicons.min.css"/>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--End of the all icons-->
+        <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <!-- All css-->
+        <link rel="stylesheet" href="vendors/css/bootstrap.min.css" media="all"/>
+        <link rel="stylesheet" href="vendors/css/animate.css" media="all"/>
+        <link rel="stylesheet" href="resources/css/init.css" media="all"/>
+        <link rel="stylesheet" href="resources/css/main.css" media="all"/>
+        <link rel="stylesheet" href="resources/css/mediaQuery.css" media="all"/>
+        <link rel="stylesheet" href="resources/css/style.css" media="all"/>
+        <!--All Javascript file-->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Inu4WqqcWZ5AUp9IGoI0xF3_qoZyXAU&libraries=places&region=ae"></script>
+        <script src="vendors/js/jquery.min.js"></script>
+        <script src="vendors/js/hammer.min.js"></script>
+        <script src="vendors/js/bootstrap.min.js"></script>
+        <script src="vendors/js/wow.min.js"></script>
+        <script src="resources/js/init.js"></script>
+        <script src="resources/js/main.js"></script>
+        <script src="resources/js/script.js"></script>
+    </head>
+    <body>
+        <nav id="header" class="whiteb navbar navbar-inverse navbar-static-top marginBottom-0" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle display-none" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" data-toggle="modal" data-target="#myModal2"><i class="font-size-16 muted mdi mdi-playlist-plus mdi-24px"></i></a>
+            </div>
+
+            <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="white"><a href="/account/login.html" class="muted font-size-14"> Login/SignUp</a></li>
+                    <li class="white"><a href="#" class="muted font-size-14">Get Listed for free</a></li>
+                    <li class="white"><a href="#" class="muted font-size-14">Know About Us</a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                    <li><a href="#" class="display-none"></a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+        <!--Midals and side nav-->
+        <div class="modal left fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2">
+            <div class="modal-dialog sidenav-width" role="document" >
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="side-nav-det">
+                            <br />  
+                            <ul id="all-side-panel">
+                                <li onclick="javascript:location.href='index.html'">
+                                    <a href="/">Home</a>
+                                </li>
+                                <li onclick="javascript:location.href='account/login.html'">
+                                    <a href="/account/login.html">Login</a>
+                                </li>
+                                <li onclick="javascript:location.href='account/signup.html'">
+                                    <a href="/account/signup.html">Signup</a>
+                                </li>
+                                <li onclick="javascript:location.href='about-us/index.html'">
+                                    <a href="about-us/index.html">About Us</a>
+                                </li>
+                                <li onclick="javascript:location.href='terms/index.html'">
+                                    <a href="/terms/index.html">Terms</a>                            
+                                </li>
+                                <li onclick="javascript:location.href='privacy/index.html'">
+                                    <a href="privacy/index.html">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="contact-us/index.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div><!-- modal-content -->
+            </div><!-- modal-dialog -->
+        </div><!-- modal -->
+        <section id="carousel-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <center>
+                            <p class="font-size-34 white font-weight-100">Find and Book Spa</p>
+                            <br />
+                        </center>
+                        <center id="">
+                            <div class="col-lg-8">
+                                <div class="input-group">
+                                    <input type="text" class="form-control border-radius-0" id="pac-input" placeholder="Location" style="width:270px;height:50px;"/>
+                                    <span class="input-group-addon"><i class="mdi mdi-map-marker l6"></i></span>
+                                    <select type="text"  class="form-control" placeholder="Category" name="category" id="category" style="width:350px;height: 50px!important;">
+                                        <option value="laser">Laser Hair removal</option>
+                                        <option value="botox">Botox</option>
+                                        <option value="microdermabrasion">Microdermabrasion</option>
+                                        <option value="kybella">Kybella</option>
+                                        <option value="fillers">Fillers</option>
+                                        <option value="peels">Chemical peels</option>
+                                    </select>
+                                    <span class="input-group-addon"><i class="mdi mdi-map-marker l6"></i></span>
+                                    <select type="text" class="form-control" placeholder="Sub Category" id="subcategory" style="width:350px;height:50px!important;">
+                                        <optgroup class="laser">
+                                            <option value="upper_lip">Upper Lip</option>
+                                            <option value="chin">Chin</option>
+                                            <option value="lower_face_full_beard">Lower face/ Full Beard</option>
+                                            <option value="forehead">Forehead</option>
+                                            <option value="brow_shaping">Brow Shaping</option>
+                                            <option value="abdomen">Abdomen</option>
+                                            <option value="chest">Chest</option>
+                                            <option value="back">Back</option>
+                                            <option value="upper_arms">Upper Arms</option>
+                                            <option value="lower_arms">Lower Arms</option>
+                                            <option value="full_arms">Full Arms</option>
+                                            <option value="under_arms">Under Arms</option>
+                                            <option value="thighs_upper_legs">Thighs/ Upper Legs</option>
+                                            <option value="lower_legs">Lower Legs</option>
+                                            <option value="full_legs">Full Legs</option>
+                                            <option value="bikni_areas">Bikini Area</option>
+                                            <option value="full_body">Full Body</option>
+                                        </optgroup>
+                                        <optgroup class="fillers">
+                                            <option value="restylane">Restylane</option>
+                                            <option value="juvederm_xc">Juvederm Xc</option>
+                                            <option value="radiesse_radiance">Radiesse/Radiance</option>
+                                            <option value="perlane">Perlane</option>
+                                            <option value="belotero">Belotero</option>
+                                            <option value="sculptra">Sculptra</option>
+                                            <option value="fat_injection">Fat Injection/ Transfer</option>
+                                        </optgroup>
+                                        <optgroup class="peels">
+                                            <option value="glycolic_lactic_peel">Superficial peel/glycolic/lactic/salicylic/AHA peels</option>
+                                            <option value="jessner_peel">Jessner peel</option>
+                                            <option value="tca_peel">TCA/Obagi blue peel</option>
+                                        </optgroup>
+                                        <optgroup class="botox">
+                                            <option value="">ANY</option>
+                                        </optgroup>
+                                        <optgroup class="microdermabrasion">
+                                            <option value="">ANY</option>
+                                        </optgroup>
+                                        <optgroup class="kybella">
+                                            <option value="">ANY</option>
+                                        </optgroup>
+                                    </select>
+                                    <span class="input-group-btn">
+                                        <button id="btn-go" onclick="getSelectedData()" style="height:50px;" class="btn btn-secondary l6b white" type="button">Go!</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="p-0" id="portfolio">
+            <div class="container-fluid">
+                <div class="row no-gutter popup-gallery">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/1.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/1.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        Find Spa's
+                                    </div>
+                                    <div class="project-name font-family">
+                                        All over dubai
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/2.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/2.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        Services
+                                    </div>
+                                    <div class="project-name font-family">
+                                        Laser, fullbody
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/3.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/3.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        Real time Search
+                                    </div>
+                                    <div class="project-name font-family">
+                                        Get all update about spa center
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/4.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/4.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        Correct Spa
+                                    </div>
+                                    <div class="project-name font-family">
+                                        Find Spa that fits you.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/5.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/5.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        24x7 Support
+                                    </div>
+                                    <div class="project-name font-family">
+                                        Get 24x7 support from Jamaliate
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="resources/img/6.png.jpg">
+                            <img class="img-fluid img-section" src="resources/img/6.png.jpg" alt="">
+                            <div class="portfolio-box-caption">
+                                <div class="portfolio-box-caption-content">
+                                    <div class="project-category text-faded font-family">
+                                        Ask Spa directly
+                                    </div>
+                                    <div class="project-name font-family">
+                                        Ask spa about price and services.
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="call-to-action l6b">
+            <div class="container text-center">
+                <h2 class="white">Find Spa Now!</h2>
+                <a class=" btn btn-default btn-xl sr-button border-circle" href="">Click Here</a>
+            </div>
+        </div>
+
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 mx-auto text-center">
+                        <h2 class="section-heading l6">Let's Get In Touch!</h2>
+                        <hr class="primary">
+                        <p class="l4">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="mr-auto text-center wow fadeIn">
+                        <i class="mdi mdi-email-outline font-size-icon sr-contact l4"></i>
+                        <p>
+                            <a href="mailto:your-email@your-domain.com" class="l4 font-family font-size-16" >feedback@jamaliate.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br />
+        <footer class="l6b">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12 footerleft paddingtop-bottom">
+                        <h6 class="heading7"> Logo</h6>
+
+                        <p><i class="fa fa-map-pin"></i> 210, Aggarwal Tower, Rohini sec 9, New Delhi -        110085, INDIA</p>
+                        <p><i class="fa fa-phone"></i> Phone (India) : +91 9999 878 398</p>
+                        <p><i class="fa fa-envelope"></i> E-mail : info@jamaliate.com</p>
+
+                    </div>
+                    <div class="col-md-4 col-sm-12 paddingtop-bottom ">
+                        <h6 class="heading7">GENERAL LINKS</h6>
+                        <ul class="footer-ul">
+                            <li><a href="/carrer/"> Career</a></li>
+                            <li><a href="/privacy-policy/"> Privacy Policy</a></li>
+                            <li><a href="/terms/"> Terms & Conditions</a></li>
+                            <li><a href="/faq/"> Frequently Ask Questions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-6 paddingtop-bottom media-not">
+                        <h6 class="heading7">LATEST POST</h6>
+                        <div class="post">
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                            <p>facebook crack the movie advertisment code:what it means for you <span>August 3,2015</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--footer start from here-->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="col-md-12">
+                    <p class="font-family">© 2017 - All Rights with Jamaliate</p>
+                </div>
+            </div>
+        </div>
+        <div id="currentLocationDiv" style="display: none; height:300px; width:100%;"></div>
+        <script>
+            new WOW().init();
+
+            $('#category').on('change', function () {
+                console.log('Is this function execting on mobilr!');
+                var cl= '.'+this.value.replace(/ /g,'');
+                //console.log(cl);
+                $('#subcategory optgroup').hide();
+                $(cl).show();
+                $('#subcategory').val('');
+            });
+        </script>
+        <script>
+            function getSelectedData(){
+                console.log('Button Selected initiated');
+                var place_sel = $('#pac-input').val();
+                var cat_sel = $('#category').val();
+                var sub_sel = $('#subcategory').val();
+
+                window.location.href="http://www.jamaliate.com/search/search.php?location="+place_sel+"&category="+cat_sel+"&sub_category="+sub_sel+"";
+
+
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+            function initialize() {
+                var input = document.getElementById('pac-input');
+                var options = {
+                    types: ['(cities)'],
+                    componentRestrictions: { country: "ae" }
+                };
+                var autocomplete = new google.maps.places.Autocomplete(input, options);
+                autocomplete.addListener('place_changed', function () {
+                    var place = autocomplete.getPlace();
+                    console.log(place.address_components[0].long_name);
+                    location_selected_fetch = place.address_components[0].long_name;
+
+                });
+            }
+        </script>
+        <style>
+            #subcategory optgroup {
+                display: none;
+            }
+
+            #subcategory .laser {
+                display: block;
+            }
+        </style>
+        <style>
+            @media all and (max-width : 1230px){
+                #pac-input{
+                    width:100%;
+                    height:auto;
+                }
+                select{
+                    width:100%;
+                    height:auto;
+                }
+                #btn-go{
+                    height:auto;
+                }
+
+            }
+        </style>
+    </body>
+</html>
