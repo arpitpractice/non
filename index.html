@@ -99,7 +99,6 @@
                             </ul>
                         </div>
                     </div>
-
                 </div><!-- modal-content -->
             </div><!-- modal-dialog -->
         </div><!-- modal -->
@@ -114,9 +113,11 @@
                         <center id="">
                             <div class="col-lg-8">
                                 <div class="input-group">
-                                    <input type="text" class="form-control border-radius-0" id="pac-input" placeholder="Location" style="width:270px;height:50px;"/>
-                                    <span class="input-group-addon"><i class="mdi mdi-map-marker l6"></i></span>
-                                    <select type="text"  class="form-control" placeholder="Category" name="category" id="category" style="width:350px;height: 50px!important;">
+                                    <input type="text" class="form-control border-radius-0" id="pac-input" placeholder="Location"/>
+                                    <br class="show-mob"/>
+                                    <br class="show-mob"/>
+                                    <span class="input-group-addon mob-hide"><i class="mdi mdi-map-marker l6"></i></span>
+                                    <select type="text"  class="form-control" placeholder="Category" name="category" id="category">
                                         <option value="laser">Laser Hair removal</option>
                                         <option value="botox">Botox</option>
                                         <option value="microdermabrasion">Microdermabrasion</option>
@@ -124,8 +125,10 @@
                                         <option value="fillers">Fillers</option>
                                         <option value="peels">Chemical peels</option>
                                     </select>
-                                    <span class="input-group-addon"><i class="mdi mdi-map-marker l6"></i></span>
-                                    <select type="text" class="form-control" placeholder="Sub Category" id="subcategory" style="width:350px;height:50px!important;">
+                                    <br  class="show-mob"/>
+                                    <br  class="show-mob"/>
+                                    <span class="input-group-addon mob-hide"><i class="mdi mdi-map-marker l6"></i></span>
+                                    <select type="text" class="form-control" placeholder="Sub Category" id="subcategory">
                                         <optgroup class="laser">
                                             <option value="upper_lip">Upper Lip</option>
                                             <option value="chin">Chin</option>
@@ -169,8 +172,10 @@
                                             <option value="">ANY</option>
                                         </optgroup>
                                     </select>
+                                    <br  class="show-mob"/>
+                                    <br  class="show-mob"/>
                                     <span class="input-group-btn">
-                                        <button id="btn-go" onclick="getSelectedData()" style="height:50px;" class="btn btn-secondary l6b white" type="button">Go!</button>
+                                        <button id="btn-go" onclick="getSelectedData()"  class="btn btn-secondary l6b white" type="button">Go!</button>
                                     </span>
                                 </div>
                             </div>
@@ -379,7 +384,7 @@
                 var autocomplete = new google.maps.places.Autocomplete(input, options);
                 autocomplete.addListener('place_changed', function () {
                     var place = autocomplete.getPlace();
-                    console.log(place.address_components[0].long_name);
+                    //console.log(place.address_components[0].long_name);
                     location_selected_fetch = place.address_components[0].long_name;
 
                 });
@@ -395,19 +400,47 @@
             }
         </style>
         <style>
-            @media all and (max-width : 1230px){
+            #pac-input{
+                width:270px !important;
+                height:50px !important;
+            }
+            .show-mob{
+                display:none;
+            }
+            #category{
+                width:350px;
+                height: 50px;
+            }
+            #subcategory{
+                width:350px;
+                height:50px!important; 
+            }
+            #btn-go{
+                height:50px !important;
+            }
+
+            @media all and (max-width : 1200px){
                 #pac-input{
-                    width:100%;
-                    height:auto;
+                    width:100% !important;
+                    height:auto !important;
                 }
-                select{
-                    width:100%;
-                    height:auto;
+                #category , #subcategory{
+                    width:100% !important;
+                    height:auto !important;
                 }
                 #btn-go{
-                    height:auto;
+                    height:auto !important;
+                    width:100%;
                 }
-
+                .mob-hide{
+                    display:none !important;
+                }
+                .show-mob{
+                    display:block !important;
+                }
+                .input-group{
+                    display:block !important;
+                }
             }
         </style>
     </body>

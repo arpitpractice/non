@@ -34,6 +34,7 @@ require_once '../partials/head.php';
         </div><!-- modal-content -->
     </div><!-- modal-dialog -->
 </div><!-- modal -->
+<!--
 <nav class="navbar navbar-default" role="navigation" style="position:relative;top:-19px; border-radius:0 !important;background-color:#024b68;padding-top:5px;padding-bottom:26px;">
     <div class="container">
         <div class="navbar-header" style="position:relative; top:8px;"> 
@@ -53,6 +54,7 @@ require_once '../partials/head.php';
         </div>
     </div>
 </nav>
+-->
 <div class="container">
     <div class="row">
         <div class="col-md-3 col-lg-3">
