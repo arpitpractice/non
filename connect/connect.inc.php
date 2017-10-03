@@ -3,7 +3,7 @@
 $dbHost     = "67.207.93.194";
 $dbUsername = "root";
 $dbPassword = "Q99pEeFw3yMntjU4";
-$dbName     = "Jamaliate_data";
+$dbName     = "Jamaliate";
 
 //Create connection and select DB
 $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);

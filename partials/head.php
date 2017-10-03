@@ -26,20 +26,20 @@
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
         <!-- All css-->
-        <link rel="stylesheet" href="/vendors/css/bootstrap.min.css" media="all"/>
-        <link rel="stylesheet" href="/vendors/css/animate.css" media="all"/>
-        <link rel="stylesheet" href="/resources/css/init.css" media="all"/>
-        <link rel="stylesheet" href="/resources/css/main.css" media="all"/>
-        <link rel="stylesheet" href="/resources/css/mediaQuery.css" media="all"/>
-        <link rel="stylesheet" href="/resources/css/style.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/vendors/css/bootstrap.min.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/vendors/css/animate.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/resources/css/init.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/resources/css/main.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/resources/css/mediaQuery.css" media="all"/>
+        <link rel="stylesheet" href="http://www.jamaliate.com/resources/css/style.css" media="all"/>
         <!--All Javascript file-->
-        <script src="/vendors/js/jquery.min.js"></script>
-        <script src="/vendors/js/hammer.min.js"></script>
-        <script src="/vendors/js/bootstrap.min.js"></script>
+        <script src="http://www.jamaliate.com/vendors/js/jquery.min.js"></script>
+        <script src="http://www.jamaliate.com/vendors/js/hammer.min.js"></script>
+        <script src="http://www.jamaliate.com/vendors/js/bootstrap.min.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7Inu4WqqcWZ5AUp9IGoI0xF3_qoZyXAU&libraries=places"></script>
-        <script src="/vendors/js/wow.min.js"></script>
-        <script src="/resources/js/init.js"></script>
-        <script src="/resources/js/main.js"></script>
-        <script src="/resources/js/script.js"></script>
+        <script src="http://www.jamaliate.com/vendors/js/wow.min.js"></script>
+        <script src="http://www.jamaliate.com/resources/js/init.js"></script>
+        <script src="http://www.jamaliate.com/resources/js/main.js"></script>
+        <script src="http://www.jamaliate.com/resources/js/script.js"></script>
     </head>
     <body>

@@ -5,26 +5,29 @@
                 <div class="side-nav-det">
                     <br />  
                     <ul id="all-side-panel">
-                        <li onclick="javascript:location.href='index.html'">
-                            <a href="/">Home</a>
+                        <li onclick="javascript:location.href='../index.html'">
+                            <a href="../index.html">Home</a>
                         </li>
                         <li onclick="javascript:location.href='account/login.html'">
-                            <a href="/account/login.html">Login</a>
+                            <a href="../account/login.php">Login/SignUp</a>
                         </li>
-                        <li onclick="javascript:location.href='account/signup.html'">
-                            <a href="/account/signup.html">Signup</a>
+                        <li onclick="javascript:location.href='../about-us/index.php'">
+                            <a href="../about-us/index.php">About Us</a>
                         </li>
-                        <li onclick="javascript:location.href='about-us/index.html'">
-                            <a href="about-us/index.html">About Us</a>
+                        <li onclick="javascript:location.href='../terms/index.php'">
+                            <a href="../terms/index.php">Terms</a>                            
                         </li>
-                        <li onclick="javascript:location.href='terms/index.html'">
-                            <a href="/terms/index.html">Terms</a>                            
+                        <li onclick="javascript:location.href='../privacy/index.php'">
+                            <a href="../privacy/index.php">Privacy Policy</a>
                         </li>
-                        <li onclick="javascript:location.href='privacy/index.html'">
-                            <a href="privacy/index.html">Privacy Policy</a>
+                           <li onclick="javascript:location.href='../careers/index.php'">
+                            <a href="../careers/index.php">Careers</a>                            
                         </li>
-                        <li>
-                            <a href="contact-us/index.html">Contact Us</a>
+                        <li onclick="javascript:location.href='../privacy/index.php'">
+                            <a href="../privacy/index.php">Privacy Policy</a>
+                        </li>
+                        <li onclick="javascript:location.href='../contact-us/index.php'">
+                            <a href="../contact-us/index.php">Contact Us</a>
                         </li>
                     </ul>
                 </div>
