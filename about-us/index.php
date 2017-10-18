@@ -23,20 +23,47 @@ require_once '../partials/sidenav.php';
         <div class="col-sm-12">
             <div class="col-xs-12 col-sm-12 col-md-12 l4 center-block text-center">
                 <h1 class="h0 font-family font-size-24">Your home for health</h1>
+                <br /><br />
+                <p class="l6 font-size-15 text-justify font-family" style="font-size:20px!important;margin-top:20px;margin-bottom:5px;" id="about-know"></p>
                 <br />
-                <h4 class="h4 font-family font-size-14 text-justify">Our mission at Jamaliate is to provide the best tools to improve your physical appearance and satisfaction, using non-invasive to minimally invasive cosmetic procedures. 
-                    <br/><br/>
-                    With every query, Jamaliate searches our huge database to show users the information they need to find the Right procedure or medicines at Right price.
-                    <br/><br/>
-                    Our tech team is always on the lookout for ways to help to incarnate yourself and make it easier to improve your physical appearance and performance. We provide variety of tools and features to make this happen.
-                    <br/><br/>
-                    <span style="color:#333;font-weight:700 !important;">Jamaliate Team</span></h4>
+                <span style="color:#333;font-weight:700 !important;">Jamaliate Team</span></h4>
             </div>
 
         </div>
     </div>
 </div>
 <br/><br/><br/>
+<script>
+    $(document).ready(function(){
+        $.ajax({
+            type : 'GET',
+            url : '../core/get_about.php',
+            success : function(data){
+                
+                data = JSON.parse(data);
+                console.log(data[0].about);
+                $('#about-know').html(data[0].about);
+            },
+            error: function(jqXHR, exception) {
+            if (jqXHR.status === 0) {
+                                        alert('Not connect, Verify Network.');
+                                    } else if (jqXHR.status == 404) {
+                                        alert('Requested page not found. [404]');
+                                    } else if (jqXHR.status == 500) {
+                                        alert('Internal Server Error [500].');
+                                    } else if (exception === 'parsererror') {
+                                        alert('Requested JSON parse failed.');
+                                    } else if (exception === 'timeout') {
+                                        alert('Time out error.');
+                                    } else if (exception === 'abort') {
+                                        alert('Ajax request aborted.');
+                                    } else {
+                                        alert('Uncaught Error.n' + jqXHR.responseText);
+                                    }
+                        }
+        })
+    })
+</script>
 <?php
 require_once '../partials/footer.php';
 require_once '../partials/foot.php';

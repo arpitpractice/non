@@ -11,9 +11,9 @@
 
     <div class="collapse navbar-collapse pull-right" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li class="white"><a href="/account/login.html" class="muted font-size-14"> Login/SignUp</a></li>
-            <li class="white"><a href="#" class="muted font-size-14">Get Listed for free</a></li>
-            <li class="white"><a href="#" class="muted font-size-14">Know About Us</a></li>
+            <li class="white"><a href="#!" class="muted font-size-14"> Login/SignUp</a></li>
+            <li class="white"><a href="../listed_free/index.php" class="muted font-size-14">Get your SPA listed!</a></li>
+            <li class="white"><a href="../about-us/index.php" class="muted font-size-14">Know About Us</a></li>
             <li><a href="#" class="display-none"></a></li>
             <li><a href="#" class="display-none"></a></li>
             <li><a href="#" class="display-none"></a></li>
