@@ -41,7 +41,9 @@ require_once '../partials/sidenav.php';
             success : function(data){
                 
                 data = JSON.parse(data);
+                
                 console.log(data[0].about);
+
                 $('#about-know').html(data[0].about);
             },
             error: function(jqXHR, exception) {

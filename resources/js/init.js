@@ -11,7 +11,7 @@ if (navigator.geolocation) {
     //timestamp property and corrds object for latitde longitude.
 
 } else {
-    alert('Geolocation is not supported in your browser');
+    console.log('Geolocation is not supported in your browser');
 }
 
 function showPosition(position) {
@@ -61,10 +61,10 @@ $.getJSON("http://freegeoip.net/json/", function (data) {
                     popup.open(googleMap);
                 });
             } else {
-                alert('No results found');
+                console.log('No results found');
             }
         } else {
-            alert('Geocoder failed due to: ' + status);
+            console.log('Geocoder failed due to: ' + status);
         }
     });
 });

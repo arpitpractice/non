@@ -14,7 +14,7 @@
             <li class="white"><a href="#!" class="muted font-size-14"> Login/SignUp</a></li>
             <li class="white"><a href="../listed_free/index.php" class="muted font-size-14">Get your SPA listed!</a></li>
             <li class="white"><a href="../about-us/index.php" class="muted font-size-14">Know About Us</a></li>
-            <li><a href="#" class="display-none"></a></li>
+            <li><a href="http://jamaliate.com/blog" class="muted font-size-14">Blog</a></li>
             <li><a href="#" class="display-none"></a></li>
             <li><a href="#" class="display-none"></a></li>
         </ul>
